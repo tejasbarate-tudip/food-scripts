@@ -6,7 +6,7 @@ counter = {}
 # Open up the favorite foods log and count frequencies using the dictionary
 with open("favorite_foods.log", "r") as f:
     for line in f:
-        item = line.strip()
+        food_item = line.strip()
         if item not in counter:
             counter[item] = 1
         else:
